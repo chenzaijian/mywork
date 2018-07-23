@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3绘制三角形</title>
+	<style type="text/css"> 
+	 .stop{
+	position: absolute;
+    width: 95px;
+    height: 95px;
+    border-radius: 50px;
+    border: 2px solid #8C8586;
+    background: #494040;
+    cursor: pointer;
+} 
+
+    .stop .juxing{
+     width: 10px;
+     height: 40px;
+     margin-left: 27px;
+     margin-top: 25px;
+     background: #cccccc;
+    }
+     .stop .juxing2{
+     width: 10px;
+     height: 40px;
+     margin-left: 27px;
+     margin-top: 25px;
+     background: #cccccc;
+    }
+
+	</style>
+</head>
+<body>
+<div class="stop">
+	<div class="juxing"></div>
+	<div class="juxing2"></div>
+</div>
+<script>
+var bg = document.getElementById('caibaojian');
+var ctx = bg.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(10,90);
+ctx.lineTo(90,40);
+ctx.closePath();//闭合路径
+ctx.lineWidth=2;//线的边框为10像素
+//ctx.strokeStyle='#00ff00';
+var grd = ctx.createLinearGradient(0,0,0,190); //从上到下
+grd.addColorStop(0,"#cccccc"); //起始颜色
+grd.addColorStop(1,"#cccccc"); //终点颜色
+ctx.strokeStyle = grd;
+ctx.stroke();
+</script>
+</body>
+</html>

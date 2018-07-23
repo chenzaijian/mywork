@@ -1,0 +1,480 @@
+html {
+	width: 100%;
+	/*overflow: hidden;*/
+}
+body {
+	width: 100%;
+	color:#333;
+	font-family: "微软雅黑";
+	font-size:14px;
+	background: #f9faf6;
+	letter-spacing: 2px;
+
+}
+
+.box{
+	width: 1920px;
+	height: 100%;
+	background: #f9faf6;
+	/*font-family: "宋体";*/
+}
+
+
+/*头部  开始*/
+.box .box_header{
+	width: 1920px;
+	height: 774px;
+	position: relative;
+	background-image: url(../images/head.jpg);
+}
+.box .box_header .title{
+	position: absolute;
+	width: 768px;
+	height:138px;
+	left: 572px;
+	top:100px;
+	
+
+
+}
+.box .box_header .title p{
+	font-size: 56px;
+    text-align: center;
+    color:#ffffff;
+    letter-spacing: 4px; 
+    font-weight:lighter;
+}
+.box .box_header .start {
+	
+	position: absolute;
+    width: 95px;
+    height: 95px;
+    top: 280px;
+    left: 912px;
+    border-radius: 50px;
+    border: 2px solid #8C8586;
+    background: #494040;
+    cursor: pointer;
+}
+
+ .box .box_header .stop{
+ 	display: none;
+	position: absolute;
+    width: 95px;
+    height: 95px;
+    top: 280px;
+    left: 912px;
+    border-radius: 50px;
+    border: 2px solid #8C8586;
+    background: #494040;
+    cursor: pointer;
+} 
+ .box .box_header  .stop .juxing{
+     width: 10px;
+     height: 40px;
+     margin-left: 27px;
+     margin-top: 25px;
+     background: #cccccc;
+    }
+ .box .box_header  .stop .juxing2{
+     width: 10px;
+     height: 40px;
+     margin-left: 54px;
+     margin-top: -39px;
+     background: #cccccc;
+    }
+
+.box .box_header .text {
+	width: 534px;
+	height: 120px;
+	position: absolute;
+	left: 723px;
+	top: 424px;
+	font-size: 20px;
+	text-align: center;
+
+}
+.box .box_header .text p{
+	width: 100%;
+	height: 33%;
+	color: #cccccc;
+	margin: 10px 0 20px 0;
+	border-bottom: 1px solid #cccccc;
+}
+.box .box_header .data{
+	width: 450px;
+	height: 100px;
+	position: absolute;
+    left: 740px;
+    top: 627px;
+    font-size: 20px;
+    color: #cccccc;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+}
+.box .box_header .data .left{
+	width: 50%;
+	color: white;
+}
+
+.box .box_header .data .left .number{
+	margin-top: 15px;
+	font-size: 40px;
+	font-family: "宋体";
+	
+}
+
+.box .box_header .data .border{
+	width: 1%;
+	height: 30px;
+	border-right:1px solid #cccccc;
+	margin-left: 225px;
+	margin-top: 25px;
+}
+.box .box_header .data .right{
+	width: 49%;
+	color: white;
+	margin-top: -56px;
+}
+.box .box_header .data .right p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+.box .box_header .data .right .hour ,
+.box .box_header .data .right .minutes{
+	font-size: 40px;
+	font-family: "宋体";
+}
+/*头部  结束*/
+
+/* 推荐  开始*/
+.box  .box_tuijian{
+	width: 1920px;
+	height: 882px;
+	background: #f9faf6;
+	position: relative;
+	/*text-align: center;*/
+}
+.box  .box_tuijian .t_title{
+    width: 154px;
+    height: 61px;
+    margin-left: 905px;
+    margin-top: 66px; 
+    /*position: absolute;*/
+    /*top: 66px;*/
+    color:#c52428;
+    border-bottom: 1px solid #c52428;
+    font-size: 36px;
+}
+.box  .box_tuijian ul{
+	width: 1236px;
+	height: 521px;
+	/*margin-left:384px; */
+	display: flex;
+	position: absolute;
+	left: 284px;
+
+}
+.box  .box_tuijian ul li{
+    height: 100%;
+    flex:1;
+    float: left;
+    margin: 36px;
+    background: #ffffff;
+    box-shadow:1px 1px 1px #cbcbcb;
+}
+.box  .box_tuijian ul li img{
+	display: block;
+	width: 389px;
+	height: 284px;
+}
+
+.box  .box_tuijian ul li .b_title{
+    margin:31px 0 35px 27px;
+    font-family: "微软雅黑"	;
+    font-size: 24px;
+    font-weight: 400;
+}
+.box  .box_tuijian ul li  p{
+	 margin: 0 0 0px 27px;
+	 color: gray;
+	 font-size: 14px;
+	 /*font-family: "微软雅黑";*/
+}
+.box  .box_tuijian ul .erwei{
+	/*float: right;*/
+	background: rgba(0,0,0,0.7);
+	width: 389px;
+	height: 521px;
+	left: 958px;
+	top: 36px;
+	position: absolute;
+	padding: 83px 26px;
+	color: #e0dfde;
+}
+.box  .box_tuijian ul .erwei  .love{
+    width: 335px;
+    height: 161px;
+    font-size: 16px;
+}
+.box  .box_tuijian ul  .erwei  img{
+	display: block;
+	width: 134px;
+	height: 134px;
+	margin-left: 101px;
+	margin-top: 60px;
+    
+} 
+.box  .box_tuijian ul .erwei .word{
+	font-size: 18px;
+	margin-left: 101px;
+	margin-top: 10px;
+} 
+.box  .box_tuijian .leftMove{
+    height: 38px;
+    width: 38px;
+    transform:rotate(-45deg); 
+    border-left: 2px solid #cccccc;
+    border-top : 2px solid #cccccc;
+    position: absolute;
+    left: 270px;
+    top: 271px;
+    cursor:pointer;
+}
+.box  .box_tuijian .rightMove{
+    height: 38px;
+    width: 38px;
+    transform:rotate(-45deg) ; 
+    border-right: 2px solid #cccccc;
+    border-bottom:2px solid #cccccc;
+    position: absolute;
+    right: 240px;
+    top: 271px;
+    cursor:pointer;
+}
+.box  .box_tuijian .checkBtn{
+	display: block;
+	padding: 14px 50px;
+	text-align: center;
+	width: 202px;
+	height: 51px;
+	position: absolute;
+	left:880px;
+	bottom: 100px;
+	color: #ffffff;
+	/*font-size: 10px;*/
+	background: #b30001;
+	border-radius: 50px;
+}
+/*推荐 结束*/
+
+/*支持  开始*/
+.box .box_support{
+	width: 100%;
+	height: 570px;
+	background: #ffffff;
+	position: relative;
+}
+.box .box_support .s_title{
+	position: absolute;
+    width: 154px;
+    height: 61px;
+    margin-left: 905px;
+    /*position: absolute;*/
+    top: 30px;
+    color:#c52428;
+    border-bottom: 1px solid #c52428;
+    font-size: 36px;
+}
+.box .box_support ul {
+	width: 1236px;
+	height: 406px;
+	/*margin-left:384px; */
+	display: flex;
+	position: absolute;
+	left: 284px;
+	text-align: center;
+}
+.box .box_support ul li {
+    flex:1;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.box .box_support ul li .textBox{
+  	width: 223px;
+  	height: 184px;
+  	position: absolute;
+  	left: 106px;
+  	font-family: "黑体";
+  	/*font-weight: 300;*/
+}
+.box .box_support ul li .textBox p{
+	color: #6e6e6e;
+	margin-top: 10px;
+
+}
+.box .box_support ul li .textBox .name {
+    font-size: 24px;
+}
+.box .box_support ul li .imgBox {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #f9fafb;
+    margin-top: 144px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.box .box_support ul li .imgBox .er {
+    display: block;
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    left: 39px;
+    top: 39px;
+    /*border: 1px solid #f9fafb;*/
+}
+/*支持 结束*/
+/*倡议 开始*/
+.box .box_advocate{
+	width: 100%;
+	height: 888px;
+	background: #ffffff;
+	padding: 0 342px;
+	/*position: relative;*/
+}
+.box .box_advocate .a_title{
+	width: 154px;
+    height: 61px;
+    margin: 0 541px;
+    border-bottom: 1px solid #c52428;
+    color: #c52428;
+    font-size: 36px;
+    /*position: absolute;*/
+    /*left: 20px;*/
+}
+.box .box_advocate .lunbo{
+	width: 1238px;
+	height: 337px;
+	background-image: url(../images/lunbo_03.jpg);
+	margin:30px 0;
+}
+.box .box_advocate .ad{
+	width: 1238px;
+	height: 80px;
+	margin-bottom: 44px;
+	margin-left: 54px;
+	margin-top: 5em;
+}
+
+.box .box_advocate .ad img{
+	display: block;
+	float: left;
+}
+.box .box_advocate .ad p{
+	margin-left: 20px;
+	float: left;
+	margin-top: 28px;
+	font-size: 24px;
+    font-family: "宋体";
+}
+/*倡议 结束*/
+
+/*感谢 开始*/
+.box .box_thank{
+	width: 100%;
+	height: 522px;
+	padding: 0 342px;
+	background: #ffffff;
+	position: relative;
+}
+.box .box_thank .m_title{
+	width: 154px;
+    height: 61px;
+    margin: 0 541px;
+    border-bottom: 1px solid #c52428;
+    color: #c52428;
+    font-size: 36px;
+}
+.box .box_thank ul {
+	width: 1236px;
+	height: 248px;
+	padding: 0 200px;
+	margin-bottom: 30px;
+}
+.box .box_thank ul li {
+	width: 50%;
+	height: 100%;
+	float:left;
+}
+.box .box_thank ul li img {
+    display: block;
+    margin: 50px 0  30px 170px;
+}
+.box .box_thank ul li p{
+	font-size: 18px;
+	text-align: center;
+}
+.box .box_thank .moveLeft {
+    height:34px;
+    width: 34px;
+    border-top: 2px solid #d9d9d9;
+    border-left: 2px solid #d9d9d9;
+    transform:rotate(-45deg);
+    float: left;
+    cursor: pointer;
+}
+.box .box_thank .moveRight {
+    height:34px;
+    width: 34px;
+    border-top: 2px solid #d9d9d9;
+    border-left: 2px solid #d9d9d9;
+    transform:rotate(-225deg);
+    float: right;
+    cursor: pointer;
+}
+.box .box_thank .boxImages {
+	width: 1460px;
+	height: 126px;
+	position: absolute;
+	left: 80px;
+	top:270px;
+	/*background-image: url(../images/lunbo2.jpg)  no-repeat;*/
+}
+.box .box_thank .boxImages ul {
+	width: 100%;
+	height: 100%;
+	/*float: left;*/
+	/*height: 126px;*/
+}
+.box .box_thank .boxImages ul li{
+    width: 132px;
+	float: left;
+	/*margin-right: 10px;*/
+}
+.box .box_thank .boxImages ul li a {
+	display: block;
+	width: 100%;
+}
+.box .box_thank .boxImages ul li a img {
+	display: block;
+	width: 80px;
+	height: 80px;
+}
+/*感谢 结束*/
+/*底部  开始*/
+.box .box_ganxie {
+	width: 100%;
+	height: 436px;
+	/*background: #ffffff;*/
+	background-image: url(../images/foot1.jpg) no-repeat;
+}
+.box .box_footer{
+	width: 100%;
+	height: 87px;
+	box-shadow: 1px 1px 5px #000000;
+}
+/*底部  结束*/
