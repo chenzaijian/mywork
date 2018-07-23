@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>购物车</title>
+    <link rel="short icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/cart.css"/>
+</head>
+<body>
+<div class="jd_cart">
+    <!-- 头部-->
+    <header class="jd_cart_header">
+        <div class="jd_cart_header_box">
+            <div class="jd_cart_back" onclick="ret()" >
+            </div>
+            <h3>购物车</h3>
+            <a href="javascript:;" class="search_icon"></a>
+        </div>
+    </header>
+    <!-- 提示-->
+    <div class="cart_tips">
+        <span class="tubiao"></span>
+        <span class="txt">您正在安全的购物环境中，请放心购物</span>
+    </div>
+    <!-- 标题-->
+    <div class="cart_title">
+        <div class="left f_left">
+            <span class="check_icon"></span>
+            <span class="favicon"></span>
+            <span class="word">京东自营</span>
+        </div>
+        <span class="sever f_right">您享受满100元免运费服务</span>
+    </div>
+    <!-- 购物车内容-->
+    <div class="jd_cart_content">
+        <ul>
+            <li>
+                <a  class="clearfix" href="javacript:;">
+                    <span class="select_icon"></span>
+                    <div class="pro_box">
+                        <img src="./images/buy-pro1.jpg" alt=""/>
+                        <p >无货</p>
+                    </div>
+                    <div class="pro_detail">
+                        <p class="name">小米 红米Note 3 高配双网通版 银白色 移动联通4G</p>
+                        <p class="price">&yen;<span class="price_num">999</span></p>
+                        <p class="check">
+                            <span class="sil" onclick="sil()">查看相似</span>
+                            <span class="del"></span>
+                        </p>
+                    </div>
+                </a>
+                <div class="yanbao" onclick="yan()">延保服务</div>
+            </li>
+            <li>
+                <a  class="clearfix" href="javacript:;">
+                    <span class="select_icon"></span>
+                    <div class="pro_box">
+                        <img src="./images/buy-pro1.jpg" alt=""/>
+                        <p >无货</p>
+                    </div>
+                    <div class="pro_detail">
+                        <p class="name">小米 红米Note 3 高配双网通版 银白色 移动联通4G啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                        <p class="price">&yen;<span class="price_num">977</span></p>
+                        <p class="check">
+                            <span class="sil" onclick="sil()">查看相似</span>
+                            <span class="del"></span>
+                        </p>
+                    </div>
+                </a>
+                <div class="yanbao" onclick="yan()">延保服务</div>
+            </li>
+            <li>
+                <div class="top_box">
+                    <div class="left f_left">
+                        <span class="add">加价购</span>
+                    </div>
+                    <div class="right f_right">
+                        <p class="act">
+                            <p class="word">商品活动已购满<span class="aim_num">1999.00</span>
+                        元，您只需再加价<span class="add_num">25.00</span>元,即可换购商品</p>
+                            <a class="jian" href="javacript:void(0)"></a>
+                        </p>
+                        <span class="change"  onclick="change()">换购商品</span>
+                    </div>
+                </div>
+                <a  class="clearfix" >
+                    <span class="select_icon"></span>
+                    <div class="pro_box">
+                        <img src="./images/buy-pro1.jpg" alt=""/>
+                        <p >无货</p>
+                    </div>
+                    <div class="pro_detail">
+                        <p class="name">小米 红米Note 3 高配双网通版 银白色 移动联通4G啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                        <p class="price">&yen;<span class="price_num">977</span></p>
+                        <div class="check">
+                            <div class="num_box">
+                                <span class="cut"></span>
+                                <input type="text" value="1" />
+                                <span class="add"></span>
+                            </div>
+                            <span class="del"></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="yanbao" onclick="yan()">延保服务</div>
+            </li>
+
+            <li>
+                <div class="top_box">
+                    <div class="left f_left">
+                        <span class="add">加价购</span>
+                    </div>
+                    <div class="right f_right">
+                        <p class="act">
+                        <p class="word">商品活动已购满<span class="aim_num">1999.00</span>
+                            元，您只需再加价<span class="add_num">25.00</span>元,即可换购商品</p>
+                        <a class="jian" href="javacript:void(0)"></a>
+                        </p>
+                        <span class="change"  onclick="change()">换购商品</span>
+                    </div>
+                </div>
+                <a  class="clearfix" >
+                    <span class="select_icon"></span>
+                    <div class="pro_box">
+                        <img src="./images/buy-pro1.jpg" alt=""/>
+                        <p >无货</p>
+                    </div>
+                    <div class="pro_detail">
+                        <p class="name">小米 红米Note 3 高配双网通版 银白色 移动联通4G啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                        <p class="price">&yen;<span class="price_num">977</span></p>
+                        <div class="check">
+                            <div class="num_box">
+                                <span class="cut"></span>
+                                <input type="text" value="1" />
+                                <span class="add"></span>
+                            </div>
+                            <span class="del"></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="yanbao" onclick="yan()">延保服务</div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- 结算区域-->
+    <footer class="jd_total">
+        <div class="jd_total_box">
+            <div class="total_left">
+                <span class="check_all"></span>
+                <span class="word">全选</span>
+                <div class="total_sum">
+                    <p class="total">合计：&yen;<span class="total_num">100000</span></p>
+                    <p  class="number">金额：&yen;<span class="cash">1000</span> 返现：&yen;<span class="ret">0</span></p>
+                </div>
+            </div>
+            <div class="total_right f_right">
+                <a href="javacript:;">去结算(<span class="time">0</span>)</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="./libs/jquery/jquery.js"></script>
+<script src="./js/cart.js"></script>
+<script>
+    function ret(){
+        location.href ="./test.html";
+    }
+    function yan(){
+        location.href ="./test.html";
+    }
+    function sil(){
+        location.href ="./test.html";
+    }
+    function change(){
+        location.href ="./test.html";
+    }
+//合计金额
+    var flag = document.querySelectorAll(" .jd_cart .jd_cart_content ul li a .select_icon")
+    var price = document.querySelectorAll(".jd_cart_content ul li a .pro_detail .price .price_num")
+//    var values=document.querySelectorAll(".jd_cart .jd_cart_content ul li a .pro_detail .check .num_box input")
+    var sum = 0;
+    for (var i = 0; i < flag.length; i++) {
+        if (flag[i].className == "select_icon"  ) {
+                sum = sum + parseFloat(price[i].textContent);
+        }
+        else {
+            sum = sum;
+        }
+
+    }
+    var total = document.querySelector(".jd_cart .jd_total  .jd_total_box .total_left" +
+            " .total_sum .total .total_num")
+    total.textContent = sum
+
+
+</script>
+</body>
+</html>

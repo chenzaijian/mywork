@@ -1,0 +1,158 @@
+html , body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    color:#333;
+}
+/*头部 开始*/
+.jd_sort {
+    max-width: 640px;
+    min-width:300px;
+    margin: 0 auto;
+    /*height: 1000px;*/
+    overflow: hidden;
+
+}
+.jd_sort .jd_sort_header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    /*background: #CCC;*/
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.jd_sort .jd_sort_header .jd_sort_header_box{
+    max-width: 640px;
+    min-width:300px;
+    height: 40px;
+    margin: 0 auto;
+    padding:0 50px 0 50px;
+    position: relative;
+    background: linear-gradient(#ffffff, #d5d5d5);
+}
+.jd_sort .jd_sort_header .jd_sort_header_box .sort_icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 15px;
+    background: url("../images/sprites.png") -60px 0;
+    background-size:200px 200px;
+    /*float: aa;*/
+}
+.jd_sort .jd_sort_header .jd_sort_header_box .back {
+    /*background:#000;*/
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: 12px;
+    position: absolute;
+    background: url("../images/sprites.png") -20px 0;
+    background-size:200px 200px;
+}
+.jd_sort .jd_sort_header .jd_sort_header_box form {
+    width: 100%;
+    position: relative;
+}
+.jd_sort .jd_sort_header .jd_sort_header_box form input {
+    /*text-align: center;*/
+    padding-left:40px;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+.jd_sort .jd_sort_header .jd_sort_header_box form span {
+    position: absolute;
+    left: 5px;
+    top:10px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites.png") no-repeat -60px -109px;
+    background-size:200px 200px; /*背景尺寸*/
+}
+/*头部 结束*/
+
+ /*左边 开始*/
+.jd_main {
+    width: 100%;
+    height: 100%;
+    padding-top:44px ;
+}
+.jd_main .left{
+    width: 90px;
+    height: 100%;
+    float: left;
+}
+.jd_main .left ul{
+    width: 90px;
+}
+.jd_main .left ul li{
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom:1px solid #cccccc ;
+    border-aa:1px solid #cccccc ;
+    background: #F3F4F6;
+}
+.jd_main .left ul li.now {
+    width: 89px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ffffff;
+    /*color: #F15353;*/
+    border-aa: 1px solid transparent;
+}
+.jd_main .left ul li.now a span{
+    color: #F15353;
+}
+ /*左边 结束*/
+
+/*右边 开始*/
+.jd_main .right {
+    height: 100%;
+    overflow: hidden;
+    padding: 10px 15px;
+    /*float: right;*/
+}
+.jd_main .right .swiper-slide img{
+    width: 100%;
+    height: 100px;
+}
+.jd_main .right h3{
+    padding: 15px 0;
+    /*width: 100%;*/
+    height: 50px;
+    color:#888888;
+    /*line-height: 30px;*/
+}
+.jd_main .right .product {
+    width: 100%;
+    height: 100%;
+}
+.jd_main .right .product ul{
+    width: 100%;
+    /*display: flex;*/
+}
+.jd_main .right .product ul li{
+    /*flex: 1;*/
+    float: left;
+    width: 33.3%;
+}
+.jd_main .right .product ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.jd_main .right .product ul li a img{
+    width: 90%;
+}
+.jd_main .right .product ul li a p{
+    padding: 10px 0;
+}
+/*右边 结束*/

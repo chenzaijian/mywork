@@ -1,0 +1,462 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:"微软雅黑";
+    font-size: 14px;
+    color: #333;
+}
+.jd_cart {
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+    height: 100%;
+    background: #efefef;
+
+}
+/*头部开始ʼ*/
+.jd_cart .jd_cart_header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.jd_cart .jd_cart_header .jd_cart_header_box {
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+    padding: 0 50px;
+    height: 40px;
+    background: -webkit-linear-gradient(180deg, #fff,#efefef);
+    background: linear-gradient(180deg, #fff,#efefef);
+    position: relative;
+}
+.jd_cart .jd_cart_header .jd_cart_header_box .jd_cart_back{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    /*background: black;*/
+    left:19px;
+    top: 14px;
+    border-top: 1px solid #0e0e13;
+    border-left: 1px solid #0e0e13;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+.jd_cart .jd_cart_header .jd_cart_header_box h3{
+    text-align: center;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    font-size:20px ;
+    font-weight: normal;
+}
+.jd_cart .jd_cart_header .jd_cart_header_box .search_icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: url("../images/sprites.png") -60px 0;
+    background-size:200px 200px;
+}
+/*头部结束*/
+
+/*提示 开始*/
+.jd_cart .cart_tips {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    border-top:1px solid #E3E3E5;
+    border-bottom:1px solid #E3E3E5;
+    background: #ffffff;
+    /*position: relative;*/
+    /*color:#000000;*/
+}
+.jd_cart .cart_tips .tubiao {
+    display: inline-block;
+    /*text-align: center;*/
+    margin-bottom: 8px;
+    vertical-align: middle; /* ������Ԫ�� ��ֱ����*/
+    background: url("../images/safe_icon.png");
+    width: 20px;
+    height: 20px;
+    background-size:20px 20px ;
+}
+.jd_cart .cart_tips .txt{
+    /*display: block;*/
+    font-size: 8px;
+}
+/*提示 结束*/
+
+/*标题 开始ʼ*/
+.jd_cart .cart_title {
+    width: 100%;
+    height: 38px;
+    margin-top:15px;
+    background: #ffffff;
+    padding: 0 10px 0 10px;
+    border-top:1px solid #E3E3E5;
+    border-bottom:1px solid #E3E3E5;
+    text-align: center;
+    line-height: 38px;
+}
+
+.jd_cart .cart_title > div > .check_icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-icon.png")  -74px 0 ;
+    background-size: 50px 100px;
+    vertical-align: middle;
+
+}
+.jd_cart .cart_title > div > .nocheck_icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-icon.png")  0 0 ;
+    background-size: 50px 100px;
+    vertical-align: middle;
+
+}
+
+.jd_cart .cart_title > div > .favicon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites.png")  0px  0px ;
+    background-size: 200px 200px;
+    vertical-align: middle;
+    margin-left: 10px;
+    zoom: 0.8;
+}
+.jd_cart .cart_title > div > .word{
+    /*margin-left: 10px;*/
+}
+.jd_cart .cart_title  .sever{
+    color: #F15353;
+    font-size: 18px;
+}
+/*标题 结束*/
+
+/*产品 开始*/
+.jd_cart .jd_cart_content {
+    width: 100%;
+    /*padding-bottom:  80px;*/
+}
+
+.jd_cart .jd_cart_content ul {
+    width: 100%;
+}
+.jd_cart .jd_cart_content ul li {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.jd_cart .jd_cart_content ul li:last-child {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 10px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 60px;
+}
+
+.jd_cart .jd_cart_content ul li a {
+    display: block;
+    width: 100%;
+}
+.jd_cart .jd_cart_content ul li a .select_icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-icon.png")  -74px 0 ;
+    background-size: 50px 100px;
+    /*vertical-align: middle;*/
+}
+.jd_cart .jd_cart_content ul li a  .select_icon.noselect {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-icon.png")  0 0 ;
+    background-size: 50px 100px;
+}
+.jd_cart .jd_cart_content ul li a .pro_box{
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.jd_cart .jd_cart_content ul li a .pro_box img{
+    width: 100%;
+}
+.jd_cart .jd_cart_content ul li a .pro_box p{
+    width: 100%;
+    height: 20px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+.jd_cart .jd_cart_content ul li a .pro_detail {
+    width: calc(100% - 120px);
+    margin-left: 10px;
+    float: left;
+    border-bottom: 1px dashed #ccc;
+    /*position: relative;*/
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .name{
+    width: 100%;
+    height: 36px;
+    line-height: 1.4;
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .price{
+    padding: 20px 0;
+    color: red;
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check{
+    width: 100%;
+    /*height: 105px;*/
+    /*overflow: hidden;*/
+    margin-bottom:8px;
+}
+.jd_cart .jd_cart_content ul li a .pro_detail  .check .sil{
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px 25px;
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check .del{
+    width: 22px;
+    height: 22px;
+    float: right;
+    position: relative;
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check .del:before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 8px;
+    position: absolute;
+    background:url(../images/delete_up.png);
+   /*-webkit-background-size: ;*/
+    background-size:22px 8px ;
+    left: 0;
+    top: 0;
+    
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check .del:after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background:url(../images/delete_down.png);
+    /*-webkit-background-size: ;*/
+    background-size:20px 20px ;
+    left: 1px;
+    bottom: -2px;
+
+}
+.jd_cart .jd_cart_content ul li .yanbao{
+    display: inline-block;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    padding: 4px 5px;
+    border-radius: 3px;
+    color:#666;
+    cursor:pointer ;
+}
+.jd_cart .jd_cart_content .top_box {
+    width: 100%;
+    height: 80px;
+    padding: 0 10px 10px 30px;
+    /*border-bottom: 1px  dashed #ccc;*/
+}
+.jd_cart .jd_cart_content .top_box .left{
+    width: 60px;
+    height: 80px;
+    float: left;
+}
+.jd_cart .jd_cart_content .top_box .left .add {
+    width: 44px;
+    height: 16px;
+    background: #F24B48;
+    color: #fff;
+    padding: 1px 2px;
+}
+.jd_cart .jd_cart_content .top_box .right {
+    width: calc(100% - 60px);
+    height: 80px;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 12px;
+    margin-top:-4px ;
+    position: relative;
+}
+.jd_cart .jd_cart_content .top_box .right .word {
+    color:#999999;
+    margin-right:8px ;
+}
+.jd_cart .jd_cart_content .top_box .right .change {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 65px;
+    height: 24px;
+    padding: 0px 3px;
+    float: right;
+    color: #999999;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    cursor: pointer;
+}
+.jd_cart .jd_cart_content .top_box .right .jian {
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 0px;
+    top:5px;
+    cursor: pointer;
+    /*margin-left:5px;*/
+}
+    /*数量选择 开始*/
+.jd_cart .jd_cart_content ul li a .pro_detail .check .num_box {
+    width: 108px;
+    height: 32px;
+    float: left;
+    margin-bottom: 5px;
+    background: #e8e8e8;
+    /*padding:  0 36px;*/
+    border: 1px solid #ccc;
+    /*position: relative;*/
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check .num_box .cut {
+    /*display: inline-block;*/
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-icon.png")  3px -48px ;
+    background-size: 50px 100px;
+    /*vertical-align: middle;*/
+    float: left;
+    margin:6px 8px;
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check .num_box input {
+    height: 30px;
+    width: 34px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    /*display: none;*/
+    content: '';
+    /*margin: 0 1px;*/
+}
+.jd_cart .jd_cart_content ul li a .pro_detail .check .num_box .add {
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-icon.png")  -71px -48px ;
+    background-size: 50px 100px;
+    float: left;
+    margin:6px 8px;
+    float: right;
+}
+    /*数量选择 结束*/
+/*产品 结束*/
+/*底部 开始*/
+.jd_cart .jd_total {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:58px;
+    z-index: 1000;
+    /*margin-top:-40px ;*/
+    /*overflow: hidden;*/
+}
+.jd_cart .jd_total  .jd_total_box {
+    max-width: 640px;
+    min-width: 320px;
+    height: 58px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.7);
+    padding-left: 10px;
+    /*margin-top:40px ;*/
+    overflow: hidden;
+}
+.jd_cart .jd_total  .jd_total_box .total_left {
+    color: #fff;
+    height: 58px;
+    width:calc(100% - 120px);
+    float: left;
+}
+.jd_cart .jd_total  .jd_total_box .total_left .check_all{
+    float: left;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background:url("../images/shop-icon.png")  -74px 0 ;
+    background-size: 50px 100px;
+    vertical-align: middle;
+    margin-top:22px;
+}
+.jd_cart .jd_total  .jd_total_box .total_left .check_all.nocheck{
+    float: left;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background:url("../images/shop-icon.png")  0 0 ;
+    background-size: 50px 100px;
+    vertical-align: middle;
+    margin-top:22px;
+}
+.jd_cart .jd_total  .jd_total_box .total_left .word{
+    text-align: center;
+    line-height: 58px;
+    margin:0 10px ;
+    float: left;
+}
+.jd_cart .jd_total  .jd_total_box .total_left .total_sum{
+    float: left;
+    height: 58px;
+    /*text-align: center;*/
+    /*line-height: 58px;*/
+}
+.jd_cart .jd_total  .jd_total_box .total_left .total_sum .total{
+    /*text-align: center;*/
+    margin-top:10px;
+    font-size: 18px;
+}
+.jd_cart .jd_total  .jd_total_box .total_left .total_sum .number{
+
+}
+.jd_cart .jd_total  .jd_total_box .total_right {
+    height: 58px;
+    width: 120px;
+    background: #F15353;
+    text-align: center;
+    line-height: 58px;
+    font-size: 19px;
+
+}
+.jd_cart .jd_total  .jd_total_box .total_right a {
+    color: #fff;
+}
+/*底部 结束*/
+
+/*;*/
+/*}*/
