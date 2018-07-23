@@ -1,0 +1,33 @@
+.layout {
+    width: 100%;
+    height: 700px;
+    background: url("http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg");
+}
+.layout input {
+    width:90%;
+    height:45px;
+    border:2px solid #fff;
+    position: fixed;
+    top:150px;
+    left:50%;
+  transform: translateX(-50%);
+  color:#000;
+}
+.layout .btn {
+    width:90%;
+    height:50px;
+      position: fixed;
+    top:220px;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    border:0;
+    outline: none;
+} 
+ .layout .btn:after {
+   display: none;
+   border-radius: 0;
+}
+.layout .btn:hover {
+    border-radius: 0;
+} 

@@ -1,0 +1,40 @@
+<view class='tq_container'>
+      <view class='tq_top'>
+            <view class='left'>
+                      <image src='{{imgSrc}}'></image>
+            </view>
+
+            <view class='right'>
+                  <view>
+                      {{cityName}}
+                  </view>
+                    <view>
+                      {{currentTime}}
+                  </view>
+            </view>
+      </view>
+
+      <view class='tq_middle'>
+                <text>{{wendu}}</text>
+      </view>
+
+       <view class='tq_list'>
+
+
+             <template name="resData">
+                <view class='time'>{{date}}</view>
+                <view class='imgBox'><image src='{{dayPictureUrl}}'></image></view>
+                <view class='temp'>{{temperature}}</view>
+                <view class='temp'>{{weather}}</view>
+                </template>
+       
+          <view  class='items'>
+        
+              
+            <view wx:for="{{futureData}}" wx:key="key">
+                    <template is="resData" data="{{...item}}"/>
+            </view>
+
+           </view>
+      </view>
+</view>

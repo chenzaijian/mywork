@@ -1,0 +1,81 @@
+.tq_container {
+  width: 100%;
+  display: table;
+  background: linear-gradient(purple ,white);
+}
+.tq_container .tq_top {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    overflow: hidden;
+}
+.tq_container .tq_top  .left {
+     flex:1;
+     text-align: right;
+     height: 120px;
+     line-height: 120px;
+}
+.tq_container .tq_top  .left image {
+  width: 84px;
+  height:60px;
+  vertical-align: middle;
+}
+.tq_container .tq_top .right {
+     flex:1;
+     height: 150px;
+      transform: translateY(35px);
+}
+.tq_container .tq_top .right view {
+    padding: 5px 15px;
+    height:20px;
+  
+}
+.tq_container .tq_top .right view:last-child {
+    font-size: 12px;
+}
+
+.tq_middle {
+  width:100%;
+  height:180px;
+  line-height: 180px;
+  font-size: 30px;
+  text-align: center;
+}
+.tq_middle text {
+  color:#fff;
+}
+.tq_list {
+  width: 100%;
+  height:180px;
+}
+.tq_list  .items {
+  width: 100%;
+
+}
+.tq_list  .items > view {
+  width: 25%;
+    height:180px;
+  float: left;
+  text-align: center;
+}
+.tq_list  .items image {
+   width:42px;
+   height: 30px;
+}
+.tq_list  .items  .time:first-child {
+  font-size: 12px;
+  padding: 10px 0;
+ 
+}
+.tq_list  .items > view:nth-child(1){
+   background: lightgreen;
+}
+.tq_list  .items > view:nth-child(2){
+   background:lightblue ;
+}
+.tq_list  .items > view:nth-child(3){
+   background: lightcyan;
+}
+.tq_list  .items > view:nth-child(4){
+   background: pink;
+}

@@ -1,0 +1,6 @@
+<view class='layout'>
+  
+          <input value='{{inpVal}}' bindfocus='inpFocus' bindinput='inpEvent'></input>
+              <button class='btn' bindtap='linkTo'>查询</button>
+
+</view>

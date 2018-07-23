@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='demo'>demo练习</view>
+    <view>
+                <template name="mydata">
+                      <view >
+                            <text>{{title}}</text> <text>{{date}}</text>
+                        </view>
+               </template>
+    </view>
+
+      <view wx:for="{{list}}" wx:key="key">
+          <template is="mydata" data="{{...item}}"/>
+      </view>
+
+      
+  <input placeholder='tips' value='{{inpVal}}' bindinput="myInp"></input>
+  <button bindtap='clickEvent'>按钮</button>
+
+  <image src='http://api.map.baidu.com/images/weather/day/qing.png'></image>
+</view>
